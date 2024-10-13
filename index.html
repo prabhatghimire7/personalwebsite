@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- SEO meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prabhat Ghimire | Web Developer</title>
+    <meta name="description" content="Welcome to Prabhat Ghimire's portfolio. I am a web developer passionate about creating functional and visually appealing web applications." />
+    <meta name="keywords" content="Prabhat Ghimire, Web Developer, Portfolio, SEO Optimization, Web Development" />
+    <meta name="author" content="Prabhat Ghimire" />
+
+    <meta property="og:title" content="Prabhat Ghimire | Web Developer Portfolio" />
+    <meta property="og:description" content="Welcome to Prabhat Ghimire's portfolio. I am a web developer passionate about creating functional and visually appealing web applications." />
+    <meta property="og:url" content="https://yourportfolio.com" />
+    <meta property="og:type" content="website" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Prabhat Ghimire",
+            "url": "https://prabhatghimire.info.np",
+            "sameAs": [
+                "https://www.facebook.com/ghimireprabhat7",
+                "https://np.linkedin.com/in/prabhat-ghimire-8b2ba1280"
+            ],
+            "jobTitle": "Web Developer",
+            "description": "Prabhat Ghimire is a web developer passionate about creating functional and visually appealing web applications."
+        }
+    </script>
+    <style>
+        * {
+            font-family: "SF Pro Display", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 flex flex-col min-h-screen">
+    <header class="bg-white dark:bg-gray-900 shadow-md fixed w-full z-10 animate-slide-down">
+        <nav class="container mx-auto p-5 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-gray-800 dark:text-gray-100">Prabhat Ghimire</a>
+            <div class="hidden md:flex">
+                <a href="#home" class="font-semibold px-4 text-gray-800 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Home</a>
+                <a href="#services" class="font-semibold px-4 text-gray-800 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">My Services</a>
+                <a href="#contact" class="font-semibold px-4 text-gray-800 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Contact Us</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <p class="text-gray-700 dark:text-gray-300 font-semibold">
+                    <i class="ri-mail-line m-1"></i>contact@prabhatghimire.info.np
+                </p>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 shadow-md">
+            <a href="#home" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-300">Home</a>
+            <a href="#services" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-300">My Services</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-300">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow mt-16">
+        <!-- Home Section -->
+        <section id="home" class="container mx-auto p-5">
+            <div class="flex flex-col-reverse md:flex-row items-center py-20">
+                <!-- Text Section -->
+                <div class="md:w-1/2 text-center md:text-left animate-fade-in">
+                    <h1 class="text-5xl font-bold mb-4 text-gray-800 dark:text-gray-100">Hi, I am Prabhat Ghimire.</h1>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">
+                        I am a passionate web developer dedicated to building modern and responsive web applications that provide exceptional user experiences. With expertise in HTML, CSS, JavaScript, and various frameworks, I strive to bring your ideas to life through innovative solutions.
+                    </p>
+                    <a href="#services" class="inline-block bg-indigo-600 dark:bg-indigo-400 text-white dark:text-gray-900 py-2 px-4 rounded hover:bg-indigo-700 dark:hover:bg-indigo-500 transition-colors duration-300 transform">Check My Services</a>
+                </div>
+
+                <!-- Image Section -->
+                <div class="md:w-1/2 mb-10 md:mb-0 text-center animate-fade-in">
+                    <img src="images/pp1.jpg" alt="Prabhat Ghimire - Web Developer" loading="lazy" class="w-80 h-80 object-cover rounded-full shadow-lg mx-auto" />
+                </div>
+            </div>
+        </section>
+
+        <!-- My Services Section -->
+        <section id="services" class="bg-gray-50 dark:bg-gray-900 py-20">
+            <div class="container mx-auto p-5">
+                <h2 class="text-3xl font-bold text-center mb-10 text-gray-800 dark:text-gray-100 animate-fade-in">My Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center animate-fade-in-up delay-100 transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                        <i class="ri-code-line text-4xl text-indigo-600 dark:text-indigo-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100">Web Development</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            I create modern, responsive websites using HTML5, CSS3, JavaScript, and Laravel PHP for backend development.
+                        </p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center animate-fade-in-up delay-200 transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                        <i class="ri-screenshot-line text-4xl text-indigo-600 dark:text-indigo-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100">Social Media Marketing</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            I create targeted Facebook and Instagram ads that drive engagement and conversions, optimizing performance through analytics.
+                        </p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center animate-fade-in-up delay-300 transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                        <i class="ri-search-line text-4xl text-indigo-600 dark:text-indigo-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100">SEO Optimization</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            I provide comprehensive SEO services, including keyword research, on-page optimization, and link building to improve your website's visibility and search engine ranking.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto p-5 py-20">
+            <h2 class="text-3xl font-bold text-center mb-10 text-gray-800 dark:text-gray-100 animate-fade-in">Contact Me</h2>
+            <form action="#" method="POST" class="max-w-lg mx-auto bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 dark:text-gray-300">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300" required />
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 dark:text-gray-300">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300" required />
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 dark:text-gray-300">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 dark:bg-indigo-400 text-white py-2 rounded hover:bg-indigo-700 dark:hover:bg-indigo-500 transition-colors duration-300">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="bg-gray-800 text-white py-5">
+        <div class="container mx-auto text-center">
+            <div class="md:hidden mt-4">
+                <p class="flex justify-center items-center">
+                    <i class="ri-mail-line mr-1"></i>
+                    <span>contact@prabhatghimire.info.np</span>
+                </p>
+                <p class="flex justify-center items-center">
+                    <i class="ri-phone-line mr-1"></i>
+                    <span>+977 9742931621</span>
+                </p>
+            </div>
+            <p>&copy; 2024 Prabhat Ghimire. All rights reserved.</p>
+            <div class="flex justify-center mt-2">
+                <a href="https://www.facebook.com/ghimireprabhat7" target="_blank" class="mx-2 text-gray-200 hover:text-white transition-colors duration-300">
+                    <i class="ri-facebook-line"></i>
+                </a>
+                <a href="https://np.linkedin.com/in/prabhat-ghimire-8b2ba1280" target="_blank" class="mx-2 text-gray-200 hover:text-white transition-colors duration-300">
+                    <i class="ri-linkedin-line"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function () {
+            const mobileMenu = document.getElementById("mobile-menu");
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
